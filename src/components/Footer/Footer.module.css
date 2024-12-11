@@ -1,13 +1,7 @@
-/* .footerBox {
-    max-width: 1000px;
-    height: 300px;
-    background-color: grey;
-    margin:0 auto;
-    margin-top: 20px;
-    border-top: 1px solid black;
-} */
 
 .footerBox {
+  border-left: 1px solid black;
+    border-right: 1px solid black;
     max-width: 1000px;
     margin: 0 auto;
     height: 390px;

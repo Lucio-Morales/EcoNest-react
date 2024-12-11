@@ -3,7 +3,7 @@ import styles from './MainPane.module.css';
 
 const MainPane = ({ children }) => {
   const location = useLocation();
-  const isHome = location.pathname === '/'; // Verificamos si estamos en la ruta "/"
+  const isHome = location.pathname === '/';
 
   return (
     <main
