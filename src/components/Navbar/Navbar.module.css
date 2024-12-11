@@ -1,0 +1,21 @@
+
+.navBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.link {
+    color: inherit;
+    font-weight: 500;
+}
+
+.link:hover {
+    color:rgb(173, 173, 24)
+}
+
+.active {
+    color: rgb(173, 173, 24)
+}

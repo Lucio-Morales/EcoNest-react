@@ -1,0 +1,17 @@
+.mainBox {
+    background-color: slateblue;
+    min-height: 100vh;
+  }
+  
+  /* SOLO PARA HOME  */
+  .fullWidth {
+    width: 100vw; 
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .centered {
+    max-width: 1000px;
+    margin: 0 auto; 
+  }
+  

@@ -1,0 +1,116 @@
+/* .footerBox {
+    max-width: 1000px;
+    height: 300px;
+    background-color: grey;
+    margin:0 auto;
+    margin-top: 20px;
+    border-top: 1px solid black;
+} */
+
+.footerBox {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 390px;
+    margin-top: 40px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #2e2e2e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .footerBox > div {
+    flex: 1;
+    padding: 0 20px;
+    color: #000000; 
+  }
+  
+  .footerBox div p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .footerBox div span {
+    font-weight: bold;
+    color: #aa5b2d; 
+  }
+  
+  .footerBox div label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #f8f8f8;
+  }
+  
+  .footerBox div input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border:none;
+    border-bottom: 2px solid brown;
+    border-left: 2px solid brown;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .footerBox div input:focus {
+    border-color: #cc6f43; /* Resaltar campo al hacer foco */
+    outline: none;
+  }
+  
+  .footerBox div button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: #e97957; /* Color de fondo de los botones */
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .footerBox div button:hover {
+    background-color: #972d0c; /* Color al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+  }
+  
+  .footerBox div button:active {
+    background-color: #5a73a5; /* Color más oscuro al hacer clic */
+    transform: translateY(0);
+  }
+  
+  .footerBox div div {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .footerBox div div button {
+    margin-left: 20px;
+    width: auto;
+  }
+  
+  .footerBox div .socialIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    margin-top: 10px;
+  }
+  
+  .footerBox div .socialIcons i {
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .footerBox div .socialIcons i:hover {
+    color: #94b9ff;
+  }
+  

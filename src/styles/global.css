@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    font-size: 16px;
+    color: #111;
+    margin: 0; 
+    padding: 0; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background-color: chocolate;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color: rgb(138, 62, 7);
+}
+

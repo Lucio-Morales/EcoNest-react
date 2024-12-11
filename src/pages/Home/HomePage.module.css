@@ -1,0 +1,41 @@
+.carouselContainer {
+    position: relative;
+    width: 100vw; /* Ancho completo */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carouselText {
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    width: 80%; /* Limita el ancho del texto */
+  }
+  
+  .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
