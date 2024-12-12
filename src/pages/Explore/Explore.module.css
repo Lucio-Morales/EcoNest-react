@@ -1,10 +1,14 @@
-
-.exploreContainer {
+.containerPrincipal {
+    width: 1000px;
+    
+}
+.headerContainer {
     display: grid;
     grid-template-columns: 29.6fr 20fr 39.5fr;
-    width: 1000px;
-    gap: 18px;
-    box-sizing: border-box;
+    width: 100%;
+    gap: 22px;
+    /* box-sizing: border-box; */
+    margin-bottom: 22px;
 }
 
 .item {
@@ -29,10 +33,14 @@
     margin-bottom: 0; 
 }
 
-
+.imageHeader {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
 .image {
     width:100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -57,6 +65,110 @@
     text-align: left;
 }
 
+/* IMAGES CONTAINER */
+/* .imagesContainer {
+    display: flex;
+    gap: 22px; 
+    max-width: 1000px;
+    margin: 0 auto; 
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 22px; 
+  }
+  
+  .column img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+  }
+    */
 
+   /* IMAGES CONTAINER 2 */
+   
+   .imagesContainer {
+    display: flex;
+    gap: 22px;  /* Espacio entre las columnas */
+    max-width: 1000px;
+    margin: 0 auto; 
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;  /* Espacio entre las imágenes dentro de cada columna */
+  }
+  
+  .imageCard {
+    position: relative;  /* Necesario para la superposición */
+    overflow: hidden;    /* Asegura que el contenido de la tarjeta no se desborde */
+    width: 100%;
+  }
+  
+  .column img {
+    width: 100%;         /* Las imágenes deben tener un ancho del 100% del contenedor */
+    height: auto;        /* La altura se ajusta automáticamente para mantener el aspecto */
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;  /* Comienza fuera de la imagen a la izquierda */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);  /* Capa blanca semi-transparente */
+    transition: left 0.3s ease-in-out, opacity 0.5s ease-in-out;  /* Suaviza tanto el desplazamiento como la opacidad */
+    z-index: 2;    /* Asegura que la superposición esté por encima de la imagen */
+    opacity: 0;  /* Inicialmente invisible */
+  }
 
- 
+  .imageCard:hover{ 
+    cursor:pointer;
+  }
+  
+  .imageCard:hover .overlay {
+    left: 0;  /* La superposición se mueve de izquierda a derecha */
+    opacity: 1; 
+    
+  }
+  
+  .overlayContent {
+    position: absolute;
+    bottom: 20px;  /* Coloca los íconos en la parte inferior */
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;  /* Coloca los íconos en las esquinas */
+  }
+  
+  .icon {
+    font-size: 24px;   /* Tamaño de los íconos */
+    color: #060215;    /* Color de los íconos */
+    transition: color 0.3s ease;   /* Efecto suave de color */
+  }
+  
+  .imageCard:hover .icon {
+    color: #94B9FF;   /* Cambio de color al hacer hover */
+  }
+  
+  .text {
+    position: absolute;
+    top: 50%;        /* Centra el texto verticalmente */
+    left: 50%;       /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #060215;
+    text-align: center;
+    opacity: 0;  /* Inicialmente invisible */
+    transition: opacity 0.9s ease;  /* Efecto suave de aparición */
+  }
+  
+  .imageCard:hover .text {
+    opacity: 1;  /* Hace que el texto sea visible al hacer hover */
+  }
+  
+  
+  
