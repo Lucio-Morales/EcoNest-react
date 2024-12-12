@@ -1,5 +1,5 @@
 .mainBox {
-    background-color: slateblue;
+    /* background-color: slateblue; */
     min-height: 100vh;
   }
   
@@ -12,8 +12,8 @@
   
   .centered {
     max-width: 1000px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    /* border-left: 1px solid black;
+    border-right: 1px solid black; */
     margin: 0 auto; 
   }
   
