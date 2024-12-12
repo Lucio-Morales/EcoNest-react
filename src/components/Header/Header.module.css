@@ -1,9 +1,9 @@
 .headerBox {
     max-width: 1000px;
-    height: 120px;
-    border-bottom: 1px solid black;
+    height: 130px;
+    /* border-bottom: 1px solid black; */
     /* border-left: 1px solid black; */
-    border-right: 1px solid black;
+    /* border-right: 1px solid black; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0 0 0 12px;
-    border-left: 1px solid black;
+    border-left:1px solid #111;
 }
 
 .logo p {
