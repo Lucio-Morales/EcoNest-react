@@ -149,10 +149,10 @@
     color: #060215;    /* Color de los íconos */
     transition: color 0.3s ease;   /* Efecto suave de color */
   }
-  
+/*   
   .imageCard:hover .icon {
-    color: #94B9FF;   /* Cambio de color al hacer hover */
-  }
+    color: #94B9FF; 
+  } */
   
   .text {
     position: absolute;

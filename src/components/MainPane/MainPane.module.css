@@ -1,6 +1,7 @@
 .mainBox {
     /* background-color: slateblue; */
     min-height: 100vh;
+    padding: 60px 0;
   }
   
   /* SOLO PARA HOME  */
@@ -12,8 +13,6 @@
   
   .centered {
     max-width: 1000px;
-    /* border-left: 1px solid black;
-    border-right: 1px solid black; */
     margin: 0 auto; 
   }
   

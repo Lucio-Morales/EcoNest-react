@@ -1,4 +1,5 @@
 import styles from './Explore.module.css';
+import { IoHeartOutline, IoArrowRedoOutline } from 'react-icons/io5';
 
 const ExplorePage = () => {
   return (
@@ -42,8 +43,12 @@ const ExplorePage = () => {
             <img src="/layout-img.webp" alt="tercera imagen" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
-                <span className={styles.icon}>❤️</span>
-                <span className={styles.icon}>🔗</span>
+                <div className={styles.icon}>
+                  <IoHeartOutline size={30} />
+                </div>
+                <div className={styles.icon}>
+                  <IoArrowRedoOutline size={30} />
+                </div>
                 <p className={styles.text}>Ver más</p>
               </div>
             </div>
@@ -53,8 +58,12 @@ const ExplorePage = () => {
             <img src="/layout-img4.webp" alt="sexta imagen" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
-                <span className={styles.icon}>❤️</span>
-                <span className={styles.icon}>🔗</span>
+                <div className={styles.icon}>
+                  <IoHeartOutline size={30} />
+                </div>
+                <div className={styles.icon}>
+                  <IoArrowRedoOutline size={30} />
+                </div>
                 <p className={styles.text}>Ver más</p>
               </div>
             </div>
@@ -64,8 +73,12 @@ const ExplorePage = () => {
             <img src="/layout-img6.webp" alt="octava imagen" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
-                <span className={styles.icon}>❤️</span>
-                <span className={styles.icon}>🔗</span>
+                <div className={styles.icon}>
+                  <IoHeartOutline size={30} />
+                </div>
+                <div className={styles.icon}>
+                  <IoArrowRedoOutline size={30} />
+                </div>
                 <p className={styles.text}>Ver más</p>
               </div>
             </div>
@@ -75,8 +88,12 @@ const ExplorePage = () => {
             <img src="/layout-img8.webp" alt="décima imagen" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
-                <span className={styles.icon}>❤️</span>
-                <span className={styles.icon}>🔗</span>
+                <div className={styles.icon}>
+                  <IoHeartOutline size={30} />
+                </div>
+                <div className={styles.icon}>
+                  <IoArrowRedoOutline size={30} />
+                </div>
                 <p className={styles.text}>Ver más</p>
               </div>
             </div>
@@ -88,8 +105,12 @@ const ExplorePage = () => {
             <img src="/layout-img2.webp" alt="cuarta imagen" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
-                <span className={styles.icon}>❤️</span>
-                <span className={styles.icon}>🔗</span>
+                <div className={styles.icon}>
+                  <IoHeartOutline size={30} />
+                </div>
+                <div className={styles.icon}>
+                  <IoArrowRedoOutline size={30} />
+                </div>
                 <p className={styles.text}>Ver más</p>
               </div>
             </div>
@@ -99,8 +120,12 @@ const ExplorePage = () => {
             <img src="/layout-img3.webp" alt="quinta imagen" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
-                <span className={styles.icon}>❤️</span>
-                <span className={styles.icon}>🔗</span>
+                <div className={styles.icon}>
+                  <IoHeartOutline size={30} />
+                </div>
+                <div className={styles.icon}>
+                  <IoArrowRedoOutline size={30} />
+                </div>
                 <p className={styles.text}>Ver más</p>
               </div>
             </div>
@@ -110,8 +135,12 @@ const ExplorePage = () => {
             <img src="/layout-img5.webp" alt="séptima imagen" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
-                <span className={styles.icon}>❤️</span>
-                <span className={styles.icon}>🔗</span>
+                <div className={styles.icon}>
+                  <IoHeartOutline size={30} />
+                </div>
+                <div className={styles.icon}>
+                  <IoArrowRedoOutline size={30} />
+                </div>
                 <p className={styles.text}>Ver más</p>
               </div>
             </div>
@@ -121,8 +150,12 @@ const ExplorePage = () => {
             <img src="/layout-img7.webp" alt="novena imagen" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
-                <span className={styles.icon}>❤️</span>
-                <span className={styles.icon}>🔗</span>
+                <div className={styles.icon}>
+                  <IoHeartOutline size={30} />
+                </div>
+                <div className={styles.icon}>
+                  <IoArrowRedoOutline size={30} />
+                </div>
                 <p className={styles.text}>Ver más</p>
               </div>
             </div>

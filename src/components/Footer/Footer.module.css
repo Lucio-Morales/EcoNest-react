@@ -1,17 +1,19 @@
 
 .footerBox {
-  border-left: 1px solid black;
-    border-right: 1px solid black;
+    background-color: #e2e2e2;
+    /* border-left: 2px solid black; */
+    border-top: 1px solid black;
     max-width: 1000px;
     margin: 0 auto;
     height: 390px;
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 80px;
     padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid #2e2e2e;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    /* border-top: 2px solid #2e2e2e; */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
   }
   
   .footerBox > div {
@@ -36,7 +38,7 @@
     font-size: 16px;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #f8f8f8;
+    color: #161616;
   }
   
   .footerBox div input {
