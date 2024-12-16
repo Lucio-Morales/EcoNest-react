@@ -1,0 +1,101 @@
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px; /* Espaciado entre secciones */
+  }
+  
+  /* Primera sección: Textos e imagen en fila */
+  .topSection {
+    display: flex;
+    gap: 22px; /* Espaciado entre los contenedores */
+    height: 380px; /* Altura común */
+  }
+  
+  .textContainer {
+    flex: 0 0 30%;
+    background-color: #0b0b0b;
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-end; /* Texto en la parte inferior */
+    padding: 22px;
+  }
+  
+  .middleText {
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+  }
+  
+  .middleText span {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .imageContainer {
+
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Segunda sección */
+  .newSection {
+    display: flex;
+    gap: 22px; /* Espaciado entre lista e imagen */
+    height: 500px; /* Más alto que la primera sección */
+  }
+  
+  /* Lista */
+  .listItems {
+    flex: 0 0 38%; /* Más angosta que el cuadro de la imagen */
+    background-color: #f8f8f8;
+    border:1px solid black;
+    padding: 20px;
+    overflow-y: auto; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .listItems ul {
+    list-style-type: disc; /* Viñetas */
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .listItems li {
+    margin-bottom: 10px;
+    
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Imagen */
+  .imageBox {
+    width: 100%;
+    background-color: #e0e0e0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .imageBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  

@@ -1,16 +1,7 @@
-import styles from './HomePage.module.css';
-import { data } from './data/data';
+import Slider from '../../components/Slider';
 
 const HomePage = () => {
-  return (
-    <div className={styles.homeContainer}>
-      <img
-        className={styles.sliderImage}
-        src={data[0].imgUrl}
-        alt="imagen de prueba"
-      />
-    </div>
-  );
+  return <Slider />;
 };
 
 export default HomePage;

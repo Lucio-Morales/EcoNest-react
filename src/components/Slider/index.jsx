@@ -1,14 +1,14 @@
 import { useRef } from 'react';
+import { data } from '../../pages/Home/data/data';
 import styles from './Slider.module.css';
-import demo1 from '/img/demo1.jpg';
-import demo2 from '/img/demo2.jpg';
-import demo3 from '/img/demo3.jpg';
-import demo4 from '/img/demo4.jpg';
-import leftArrow from '/left-arrow.svg'; // Importa la flecha izquierda
-import rightArrow from '/right-arrow.svg'; // Importa la flecha derecha
+import leftArrow from '/left-arrow.svg';
+import rightArrow from '/right-arrow.svg';
+import { useEffect } from 'react';
 
 const Slider = () => {
   const slideShow = useRef(null);
+  const autoSlideInterval = useRef(null);
+  // const slideShowInterval = useRef(null);
 
   const handleNext = () => {
     // Comprobamos que el slideShow tenga elementos dentro.
@@ -19,9 +19,10 @@ const Slider = () => {
       //Establezco la transicion.
       slideShow.current.style.transition = `400ms ease-out all`;
 
+      // Obtengo el ancho del primer slide para saber cuanto debe desplazarse el carrusel
       const slideSize = slideShow.current.children[0].offsetWidth;
 
-      // Muevo el slideShow
+      // Muevo el slideShow en funcion del slideSize
       slideShow.current.style.transform = `translateX(-${slideSize}px)`;
 
       const transition = () => {
@@ -32,10 +33,11 @@ const Slider = () => {
         //Agarro el primer elemento y lo envio al final.
         slideShow.current.appendChild(firstElement);
 
+        // Remuevo el evento
         slideShow.current.removeEventListener('transitionend', transition);
       };
 
-      //Eventlistener para cuando termina la animacion.
+      //  Event que se dispara cuando termina la animacion.
       slideShow.current.addEventListener('transitionend', transition);
     }
   };
@@ -59,41 +61,43 @@ const Slider = () => {
     }
   };
 
+  const startAutoSlide = () => {
+    autoSlideInterval.current = setInterval(() => {
+      handleNext();
+    }, 3000);
+  };
+
+  const stopAutoSlide = () => {
+    clearInterval(autoSlideInterval.current);
+  };
+
+  useEffect(() => {
+    // Inicio el slider cuando se monta el componente
+    startAutoSlide();
+
+    // Y lo freno cuando se desmonta
+    return () => stopAutoSlide();
+  }, []);
+
   return (
-    <div className={styles.mainContainer}>
+    <div
+      className={styles.mainContainer}
+      onMouseEnter={stopAutoSlide}
+      onMouseLeave={startAutoSlide}
+    >
       <div className={styles.contenedorPrincipal}>
         <div className={styles.contenedorSlideshow} ref={slideShow}>
           <div className={styles.slide}>
-            <a href="https://github.com/lucio-morales">
-              <img src={demo1} alt="slider image" />
-            </a>
-            <div className={styles.textoSlide}>
-              <p>Parrafo para poner en cada imagen</p>
-            </div>
+            <img src={data[0].imgUrl} alt="slider image" />
           </div>
           <div className={styles.slide}>
-            <a href="https://github.com/lucio-morales">
-              <img src={demo2} alt="slider image" />
-            </a>
-            <div className={styles.textoSlide}>
-              <p>Parrafo para poner en cada imagen</p>
-            </div>
+            <img src={data[1].imgUrl} alt="slider image" />
           </div>
           <div className={styles.slide}>
-            <a href="https://github.com/lucio-morales">
-              <img src={demo3} alt="slider image" />
-            </a>
-            <div className={styles.textoSlide}>
-              <p>Parrafo para poner en cada imagen</p>
-            </div>
+            <img src={data[2].imgUrl} alt="slider image" />
           </div>
           <div className={styles.slide}>
-            <a href="https://github.com/lucio-morales">
-              <img src={demo4} alt="slider image" />
-            </a>
-            <div className={styles.textoSlide}>
-              <p>Parrafo para poner en cada imagen</p>
-            </div>
+            <img src={data[3].imgUrl} alt="slider image" />
           </div>
         </div>
 

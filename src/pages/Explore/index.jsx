@@ -8,7 +8,7 @@ const ExplorePage = () => {
         <div className={`${styles.item} ${styles.imageItem}`}>
           <img
             className={styles.imageHeader}
-            src="/img1.jpg"
+            src="/img1.webp"
             alt="primer imagen"
           />
         </div>
