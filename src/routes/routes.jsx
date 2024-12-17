@@ -3,7 +3,7 @@ import MainLayout from '../App';
 import HomePage from '../pages/Home';
 import ExplorePage from '../pages/Explore';
 import AmenitiesPage from '../pages/Amenities';
-import MeetingEventsPage from '../pages/MeetingaAndEvents';
+import MeetingEventsPage from '../pages/MeetingsAndEvents';
 import Slider from '../components/Slider';
 
 const routes = createBrowserRouter([
