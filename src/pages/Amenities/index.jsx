@@ -12,7 +12,7 @@ const AmenitiesPage = () => {
           </div>
         </div>
         <div className={styles.imageContainer}>
-          <img src="/pool.jpg" alt="Descripción de la piscina" />
+          <img src="/pool.jpg" alt="Descripción de la piscina" loading="lazy" />
         </div>
       </div>
 
@@ -35,7 +35,7 @@ const AmenitiesPage = () => {
         </div>
 
         <div className={styles.imageBox}>
-          <img src="/gym.jpg" alt="Descripción del servicio" />
+          <img src="/gym.jpg" alt="Descripción del servicio" loading="lazy" />
         </div>
       </section>
     </div>

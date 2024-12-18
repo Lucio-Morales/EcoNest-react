@@ -1,7 +1,5 @@
-
+/* 
 .footerBox {
-    background-color: #e2e2e2;
-    /* border-left: 2px solid black; */
     border-top: 1px solid black;
     max-width: 1000px;
     margin: 0 auto;
@@ -12,101 +10,136 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-top: 2px solid #2e2e2e; */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
   }
-  
-  .footerBox > div {
-    flex: 1;
-    padding: 0 20px;
-    color: #000000; 
+
+   */
+
+   .footerBox {
+    border-top: 1px solid black;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Cambiado para mejor alineación vertical */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    gap: 20px; /* Espacio entre secciones */
   }
   
-  .footerBox div p {
+  .contactSection {
+    flex: 1;
+  }
+  
+  .address {
     font-size: 14px;
     line-height: 1.6;
+    color: #333;
     margin-bottom: 20px;
   }
   
-  .footerBox div span {
-    font-weight: bold;
-    color: #aa5b2d; 
+  .socialAndContact {
+    display: flex;
+    gap: 22px;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-bottom: 20px;
   }
   
-  .footerBox div label {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #161616;
+  .socialIcons {
+    display: flex;
+    gap: 10px;
   }
   
-  .footerBox div input { 
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    border:none;
-    border-bottom: 2px solid brown;
-    border-left: 2px solid brown;
-    font-size: 16px;
-    color: #333;
-    background-color: #fff;
-    transition: border-color 0.3s ease;
-  }
-  
-  .footerBox div input:focus {
-    border-color: #cc6f43; /* Resaltar campo al hacer foco */
-    outline: none;
-  }
-  
-  .footerBox div button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 20px;
-    border-radius: 4px;
-    background-color: #e97957; /* Color de fondo de los botones */
-    color: #ffffff;
-    font-size: 16px;
+  .contactButton {
+    padding: 8px 16px;
+    background-color: #1b1b1b; /* Color azul */
+    color: white;
     border: none;
+    /* border-radius: 4px; */
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 14px;
+    transition: background-color 0.3s;
   }
   
-  .footerBox div button:hover {
-    background-color: #972d0c; /* Color al pasar el mouse */
-    transform: translateY(-2px); /* Efecto de elevación */
+  .contactButton:hover {
+    background-color: #000000;
   }
   
-  .footerBox div button:active {
-    background-color: #5a73a5; /* Color más oscuro al hacer clic */
-    transform: translateY(0);
+  .copyright {
+    font-size: 12px;
+    color: #888;
   }
   
-  .footerBox div div {
+  .subscriptionSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .subscriptionTitle {
+    font-size: 16px;
+    text-align: center;
+    /* font-weight: bold; */
+    color: #060215; 
+    margin-bottom: 10px;
+  }
+  
+  .emailInput {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .emailLabel {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .inputField {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .inputField:focus {
+    outline: none;
+    border-color: #6882B4;
+    box-shadow: 0 0 5px rgba(104, 130, 180, 0.5);
+  }
+  
+  .newsletterCheckbox {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    gap: 10px;
   }
   
-  .footerBox div div button {
-    margin-left: 20px;
-    width: auto;
+  .checkboxLabel {
+    font-size: 14px;
   }
   
-  .footerBox div .socialIcons {
-    display: flex;
-    justify-content: space-between;
-    width: 140px;
-    margin-top: 10px;
+  .checkbox {
+    width: 16px;
+    height: 16px;
+    accent-color: #1b1b1b; 
   }
   
-  .footerBox div .socialIcons i {
-    font-size: 20px;
-    color: #fff;
-    transition: color 0.3s ease;
+  .subscribeButton {
+    padding: 10px 20px;
+    background-color: #1b1b1b; 
+    color: white;
+    border: none;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
   }
   
-  .footerBox div .socialIcons i:hover {
-    color: #94b9ff;
+  .subscribeButton:hover {
+    color:#1b1b1b;
+    background-color: white;
   }
   

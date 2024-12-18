@@ -10,6 +10,7 @@ const ExplorePage = () => {
             className={styles.imageHeader}
             src="/img1.webp"
             alt="primer imagen"
+            loading="lazy"
           />
         </div>
         <div className={`${styles.item} ${styles.middleItem}`}>
@@ -40,7 +41,7 @@ const ExplorePage = () => {
       <div className={styles.imagesContainer}>
         <div className={styles.column}>
           <div className={styles.imageCard}>
-            <img src="/layout-img.webp" alt="tercera imagen" />
+            <img src="/layout-img.webp" alt="tercera imagen" loading="lazy" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
                 <div className={styles.icon}>
@@ -55,7 +56,7 @@ const ExplorePage = () => {
           </div>
 
           <div className={styles.imageCard}>
-            <img src="/layout-img4.webp" alt="sexta imagen" />
+            <img src="/layout-img4.webp" alt="sexta imagen" loading="lazy" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
                 <div className={styles.icon}>
@@ -70,7 +71,7 @@ const ExplorePage = () => {
           </div>
 
           <div className={styles.imageCard}>
-            <img src="/layout-img6.webp" alt="octava imagen" />
+            <img src="/layout-img6.webp" alt="octava imagen" loading="lazy" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
                 <div className={styles.icon}>
@@ -85,7 +86,7 @@ const ExplorePage = () => {
           </div>
 
           <div className={styles.imageCard}>
-            <img src="/layout-img8.webp" alt="décima imagen" />
+            <img src="/layout-img8.webp" alt="décima imagen" loading="lazy" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
                 <div className={styles.icon}>
@@ -102,7 +103,7 @@ const ExplorePage = () => {
 
         <div className={styles.column}>
           <div className={styles.imageCard}>
-            <img src="/layout-img2.webp" alt="cuarta imagen" />
+            <img src="/layout-img2.webp" alt="cuarta imagen" loading="lazy" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
                 <div className={styles.icon}>
@@ -117,7 +118,7 @@ const ExplorePage = () => {
           </div>
 
           <div className={styles.imageCard}>
-            <img src="/layout-img3.webp" alt="quinta imagen" />
+            <img src="/layout-img3.webp" alt="quinta imagen" loading="lazy" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
                 <div className={styles.icon}>
@@ -132,7 +133,7 @@ const ExplorePage = () => {
           </div>
 
           <div className={styles.imageCard}>
-            <img src="/layout-img5.webp" alt="séptima imagen" />
+            <img src="/layout-img5.webp" alt="séptima imagen" loading="lazy" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
                 <div className={styles.icon}>
@@ -147,7 +148,7 @@ const ExplorePage = () => {
           </div>
 
           <div className={styles.imageCard}>
-            <img src="/layout-img7.webp" alt="novena imagen" />
+            <img src="/layout-img7.webp" alt="novena imagen" loading="lazy" />
             <div className={styles.overlay}>
               <div className={styles.overlayContent}>
                 <div className={styles.icon}>

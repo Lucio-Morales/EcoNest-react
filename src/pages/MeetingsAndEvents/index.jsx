@@ -42,6 +42,7 @@ const MeetingEventsPage = () => {
           <img
             src="/meetings.jpg"
             alt="meeting image"
+            loading="lazy"
             className={styles.image}
           />
         </div>

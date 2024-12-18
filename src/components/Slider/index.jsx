@@ -88,16 +88,16 @@ const Slider = () => {
       <div className={styles.contenedorPrincipal}>
         <div className={styles.contenedorSlideshow} ref={slideShow}>
           <div className={styles.slide}>
-            <img src={data[0].imgUrl} alt="slider image" />
+            <img src={data[0].imgUrl} alt="slider image" loading="lazy" />
           </div>
           <div className={styles.slide}>
-            <img src={data[1].imgUrl} alt="slider image" />
+            <img src={data[1].imgUrl} alt="slider image" loading="lazy" />
           </div>
           <div className={styles.slide}>
-            <img src={data[2].imgUrl} alt="slider image" />
+            <img src={data[2].imgUrl} alt="slider image" loading="lazy" />
           </div>
           <div className={styles.slide}>
-            <img src={data[3].imgUrl} alt="slider image" />
+            <img src={data[3].imgUrl} alt="slider image" loading="lazy" />
           </div>
         </div>
 
@@ -107,7 +107,7 @@ const Slider = () => {
             onClick={handlePrev}
             aria-label="Previous Slide"
           >
-            <img src={leftArrow} alt="left arrow" />
+            <img src={leftArrow} alt="left arrow" loading="lazy" />
           </button>
         </div>
 
@@ -117,7 +117,7 @@ const Slider = () => {
             onClick={handleNext}
             aria-label="Next Slide"
           >
-            <img src={rightArrow} alt="right arrow" />
+            <img src={rightArrow} alt="right arrow" loading="lazy" />
           </button>
         </div>
       </div>

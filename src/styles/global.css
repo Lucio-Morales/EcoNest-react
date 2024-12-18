@@ -20,13 +20,13 @@ a {
     color: inherit;
 }
 
-button {
+/* button {
     background-color: chocolate;
     border:none;
     cursor:pointer;
-}
+} */
 
-button:hover {
+/* button:hover {
     background-color: rgb(138, 62, 7);
-}
+} */
 
