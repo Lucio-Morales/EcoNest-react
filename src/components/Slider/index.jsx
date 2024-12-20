@@ -1,9 +1,19 @@
 import { useRef } from 'react';
-import { data } from '../../pages/Home/data/data';
 import styles from './Slider.module.css';
 import leftArrow from '/left-arrow.svg';
 import rightArrow from '/right-arrow.svg';
 import { useEffect } from 'react';
+import img1 from '../../assets/images/img1.webp';
+import img2 from '../../assets/images/img2.webp';
+import img3 from '../../assets/images/img3.webp';
+import img4 from '../../assets/images/img4.webp';
+
+const data = [
+  { id: 1, imgUrl: img1 },
+  { id: 2, imgUrl: img2 },
+  { id: 3, imgUrl: img3 },
+  { id: 4, imgUrl: img4 },
+];
 
 const Slider = () => {
   const slideShow = useRef(null);

@@ -1,4 +1,5 @@
 import styles from './Explore.module.css';
+import foodImg from '../../assets/images/food.webp';
 import { IoHeartOutline, IoArrowRedoOutline } from 'react-icons/io5';
 
 const ExplorePage = () => {
@@ -8,7 +9,7 @@ const ExplorePage = () => {
         <div className={`${styles.item} ${styles.imageItem}`}>
           <img
             className={styles.imageHeader}
-            src="/img1.webp"
+            src={foodImg}
             alt="primer imagen"
             loading="lazy"
           />
