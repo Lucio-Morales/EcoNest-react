@@ -3,17 +3,7 @@ import styles from './Slider.module.css';
 import leftArrow from '/left-arrow.svg';
 import rightArrow from '/right-arrow.svg';
 import { useEffect } from 'react';
-import img1 from '../../assets/images/img1.webp';
-import img2 from '../../assets/images/img2.webp';
-import img3 from '../../assets/images/img3.webp';
-import img4 from '../../assets/images/img4.webp';
-
-const data = [
-  { id: 1, imgUrl: img1 },
-  { id: 2, imgUrl: img2 },
-  { id: 3, imgUrl: img3 },
-  { id: 4, imgUrl: img4 },
-];
+// import ImageComponent from '../ImageComponent/ImageComponent';
 
 const Slider = () => {
   const slideShow = useRef(null);
@@ -98,16 +88,20 @@ const Slider = () => {
       <div className={styles.contenedorPrincipal}>
         <div className={styles.contenedorSlideshow} ref={slideShow}>
           <div className={styles.slide}>
-            <img src={data[0].imgUrl} alt="slider image" loading="lazy" />
+            {/* <ImageComponent src="/img1.webp" alt="sldier image" /> */}
+            <img src="/img1.webp" alt="slider image" />
           </div>
           <div className={styles.slide}>
-            <img src={data[1].imgUrl} alt="slider image" loading="lazy" />
+            {/* <ImageComponent src="/img2.webp" alt="sldier image" /> */}
+            <img src="/img2.webp" alt="slider image" />
           </div>
           <div className={styles.slide}>
-            <img src={data[2].imgUrl} alt="slider image" loading="lazy" />
+            {/* <ImageComponent src="/img3.webp" alt="sldier image" /> */}
+            <img src="img3.webp" alt="slider image" />
           </div>
           <div className={styles.slide}>
-            <img src={data[3].imgUrl} alt="slider image" loading="lazy" />
+            {/* <ImageComponent src="/img4.webp" alt="sldier image" /> */}
+            <img src="/img4.webp" alt="slider image" />
           </div>
         </div>
 

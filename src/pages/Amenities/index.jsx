@@ -1,11 +1,8 @@
 import styles from './Amenities.module.css';
-import poolImg from '../../assets/images/pool.webp';
-import gymImg from '../../assets/images/gym.webp';
 
 const AmenitiesPage = () => {
   return (
     <div className={styles.container}>
-      {/* Primera sección */}
       <div className={styles.topSection}>
         <div className={styles.textContainer}>
           <div className={styles.middleText}>
@@ -14,11 +11,14 @@ const AmenitiesPage = () => {
           </div>
         </div>
         <div className={styles.imageContainer}>
-          <img src={poolImg} alt="Descripción de la piscina" loading="lazy" />
+          <img
+            src="/pool.webp"
+            alt="Descripción de la piscina"
+            loading="lazy"
+          />
         </div>
       </div>
 
-      {/* Segunda sección */}
       <section className={styles.newSection}>
         <div className={styles.listItems}>
           <ul>
@@ -37,7 +37,7 @@ const AmenitiesPage = () => {
         </div>
 
         <div className={styles.imageBox}>
-          <img src={gymImg} alt="Descripción del servicio" loading="lazy" />
+          <img src="/gym.webp" alt="Descripción del servicio" loading="lazy" />
         </div>
       </section>
     </div>

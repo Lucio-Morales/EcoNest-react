@@ -98,7 +98,7 @@
   .column {
     display: flex;
     flex-direction: column;
-    gap: 22px;  /* Espacio entre las imágenes dentro de cada columna */
+    gap: 22px;  
   }
   
   .imageCard {
@@ -107,9 +107,9 @@
     width: 100%;
   }
   
-  .column img {
-    width: 100%;         /* Las imágenes deben tener un ancho del 100% del contenedor */
-    height: auto;        /* La altura se ajusta automáticamente para mantener el aspecto */
+  .imageCard img {
+    width: 100%;         
+    height: auto;        
     display: block;
   }
   

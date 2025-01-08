@@ -1,5 +1,4 @@
 import Card from './components/Card';
-import meetingImg from '../../assets/images/meeting.webp';
 import styles from './MeetingsAndEvents.module.css';
 
 const cardsData = [
@@ -41,7 +40,7 @@ const MeetingEventsPage = () => {
         </div>
         <div className={styles.secondElement}>
           <img
-            src={meetingImg}
+            src="/meeting.webp"
             alt="meeting image"
             loading="lazy"
             className={styles.image}
