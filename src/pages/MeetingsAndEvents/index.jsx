@@ -31,7 +31,7 @@ const cardsData = [
 ];
 
 const MeetingEventsPage = () => {
-  return (
+  return ( 
     <div className={styles.container}>
       <div className={styles.topSection}>
         <div className={styles.firstElement}>

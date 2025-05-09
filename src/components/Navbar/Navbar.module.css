@@ -6,16 +6,31 @@
     gap: 32px;
     height: 100%;
 }
+/* .link {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: none; 
+    transition: color 0.1s ease; 
+}
+
+.link:hover,
+.active {
+    color: rgb(173, 173, 24);
+} */
 
 .link {
     color: inherit;
     font-weight: 500;
-}
-
-.link:hover {
-    color:rgb(173, 173, 24)
-}
-
-.active {
-    color: rgb(173, 173, 24)
-}
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid transparent; 
+    transition: color 0.1s ease, border-color 0.1s ease;
+    
+  }
+  
+  .link:hover,
+  .active {
+    color: rgb(211, 94, 21);
+    border-color: black;
+  }
+  
